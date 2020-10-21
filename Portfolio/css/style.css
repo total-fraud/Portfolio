@@ -4,31 +4,42 @@
   box-sizing: border-box;
 }
 
-/* .header__container {
-  height: 10vh;
-  background: rgb(7, 7, 7);
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Noto Sans"), local("NotoSans"),
+    url("../fonts/NotoSans-Regular.ttf") format("truetype");
 }
 
-.menu-list {
-  padding-top: 4vh;
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Noto Sans Bold"), local("NotoSans-Bold"),
+    url("../fonts/NotoSans-Bold.ttf") format("truetype");
 }
-
-.menu-list__item {
-  color: cornsilk;
-  padding-right: 25px;
-}
-.menu-list__item:last-child {
-  padding-right: 80px;
-}  */
 
 .about-banner {
   height: 100vh;
   display: flex;
-  align-items: flex-end;
-  background: darkgrey;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .about-banner__text {
@@ -36,8 +47,31 @@
   margin: 0 auto;
   font-size: 25px;
   padding-bottom: 15vh;
-  color: cornsilk;
+  color: rgb(255, 255, 255);
   text-align: center;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.arrow {
+  margin: 0 auto;
+  background-image: url("../img/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100px;
+  animation: arrow-pulse 1.8s infinite;
+}
+
+@keyframes arrow-pulse {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: 0px 30px;
+  }
+  100% {
+    background-position: 0px 0px /* анимируем свойство background-position */;
+  }
 }
 
 .gallery {
