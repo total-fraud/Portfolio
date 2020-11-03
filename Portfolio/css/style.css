@@ -300,6 +300,7 @@ body {
 
 .contacts__list {
   display: flex;
+  overflow: hidden;
   list-style: none;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -311,9 +312,9 @@ body {
 }
 
 .contacts__item:last-of-type {
+  max-width: 100%;
   padding-right: 20px;
   margin-left: auto;
-  max-width: fit-content;
 }
 
 .contacts__mail {
@@ -321,6 +322,7 @@ body {
   color: white;
   font-size: 18px;
   font-family: "Noto Sans", sans-serif;
+  width: fit-content;
 }
 
 .contacts__link > img:hover {
