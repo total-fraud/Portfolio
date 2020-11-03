@@ -21,7 +21,7 @@ function windowOnClick(event) {
 trigger.forEach(item => item.addEventListener("click", () => {
     if (item.dataset.project === 'photobomb') {
         modalContent.insertAdjacentHTML("beforeend",
-            '<div class="modal-content__container" data-projectContent = "delete"><a href="https://total-fraud.github.io/" class="project-link" target="_blank">Photobomb</a><div class="modal-text">This project was made on courses from KT.team, which canceled courses due to quarantine : ( Worked on a project using Vue.js, npm, Webpack and others. Main page and profile page were made</div><div class="modal-img-container"><img class="modal-img" src="img/Photobomb.PNG"></div> </div>');
+            '<div class="modal-content__container" data-projectContent = "delete"><a href="https://total-fraud.github.io/" class="project-link" target="_blank">Photobomb</a><div class="modal-text">This project was made on courses from KT.team, which canceled courses due to quarantine : ( Worked on a project using Vue.js, npm, Webpack and others. Main page and profile page were made</div><div class="modal-img-container"><img class="modal-img" src="img/photobomb.png"></div> </div>');
     } else if (item.dataset.project === 'tsekh') {
         modalContent.insertAdjacentHTML("beforeend",
             '<div class="modal-content__container" data-projectContent = "delete"><a href="./projects/tsekh-design/index.html" class="project-link" target="_blank">Tsekh</a><div class="modal-text">Home page of design studio Tsekh. Made according to a template from Figma.</div><div class="modal-img-container"><img class="modal-img" src="img/tsekh.png"></div></div>');
