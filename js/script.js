@@ -25,8 +25,7 @@ trigger.forEach(item => item.addEventListener("click", () => {
     } else if (item.dataset.project === 'lasles') {
         modalContent.insertAdjacentHTML("beforeend",
             '<div class="modal-content__container" data-projectContent = "delete"><a href="./projects/lasles-vpn/index.html" class="project-link" target="_blank">LaslesVPN</a><div class="modal-text">Home page of non existing vpn servies, some sliders, some pretty animation and responsive design.</div><div class="modal-img-container"><img class="modal-img" src="img/lasles.png"></div></div>');
-    }
-    else if (item.dataset.project === 'tsekh') {
+    } else if (item.dataset.project === 'tsekh') {
         modalContent.insertAdjacentHTML("beforeend",
             '<div class="modal-content__container" data-projectContent = "delete"><a href="./projects/tsekh-design/index.html" class="project-link" target="_blank">Tsekh</a><div class="modal-text">Home page of design studio Tsekh. Made according to a template from Figma.</div><div class="modal-img-container"><img class="modal-img" src="img/tsekh.png"></div></div>');
     } else if (item.dataset.project === 'drum') {
@@ -47,6 +46,9 @@ trigger.forEach(item => item.addEventListener("click", () => {
     } else if (item.dataset.project === 'ajax') {
         modalContent.insertAdjacentHTML("beforeend",
             '<div class="modal-content__container" data-projectContent = "delete"><a href="./projects/06ajax/index.html" class="project-link" target="_blank">USA city list</a><div class="modal-text">Wow! It&#39;s a list of good amount of american city&#39;s and state&#39;s, with amount of living, look&#39;s neat. Used AJAX and JSON with fetch().</div><div class="modal-img-container"><img class="modal-img" src="img/6ajax.png"></div></div>');
+    } else if (item.dataset.project === 'todo') {
+        modalContent.insertAdjacentHTML("beforeend",
+            '<div class="modal-content__container" data-projectContent = "delete"><a href="./projects/07todo/index.html" class="project-link" target="_blank">To do app</a><div class="modal-text">To do app with save function.</div><div class="modal-img-container"><img class="modal-img" src="img/7todo.png"></div></div>');
     }
     toggleModal();
 }));

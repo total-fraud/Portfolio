@@ -760,9 +760,6 @@ button:focus {
 button:disabled {
   background-color: #f53838;
 }
-button svg:disabled {
-  fill: #ffffff;
-}
 
 .prev,
 .next {
