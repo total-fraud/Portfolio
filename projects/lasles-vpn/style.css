@@ -353,6 +353,11 @@ body {
   flex-direction: column;
   align-items: center;
   transition: 0.2s;
+  margin-right: 20px;
+}
+
+.rate__item:last-of-type {
+  margin-right: 0;
 }
 
 .rate__item:hover,
